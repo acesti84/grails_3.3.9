@@ -25,6 +25,7 @@ RUN curl -s https://get.sdkman.io | bash
 RUN /bin/bash -c "source /root/.sdkman/bin/sdkman-init.sh" 
 RUN /bin/bash -c "source /root/.sdkman/bin/sdkman-init.sh && sdk install grails 3.3.9" 
 
+RUN apt-get -y install npm
 RUN apt-get clean
 RUN apt-get autoclean
 RUN apt-get autoremove
