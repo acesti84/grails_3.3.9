@@ -13,6 +13,7 @@ RUN apt-get -y install openssl
 RUN apt-get -y install curl 
 RUN apt-get -y install zip
 RUN apt-get -y install unzip
+RUN apt-get -y install p7zip-full
 
 # install java 8
 RUN apt-get -y install openjdk-8-jdk
